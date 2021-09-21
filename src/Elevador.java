@@ -1,11 +1,43 @@
 public class Elevador {
-    int andarAtual = 0;
-    int totalAndares;
-    int capacidade = 15;
-    int pessoasNele = 0;
+    private int andarAtual = 0;
+    private int totalAndares;
+    private int capacidade = 15;
+    private int pessoasNele = 0;
 
     public Elevador (int totalAndares){
         this.totalAndares = totalAndares;
+    }
+
+    public int getAndarAtual(){
+        return andarAtual;
+    }
+
+    public int getTotalAndares(){
+        return totalAndares;
+    }
+
+    public int getCapacidade(){
+        return capacidade;
+    }
+
+    public int getPessoasNele(){
+        return pessoasNele;
+    }
+
+    public void setAndarAtual(int andarAtual){
+        this.andarAtual = andarAtual;
+    }
+
+    public void setTotalAndares(int totalAndares){
+        this.totalAndares = totalAndares;
+    }
+
+    public void setCapacidade(int capacidade){
+        this.capacidade = capacidade;
+    }
+
+    public void setPessoasNele(int pessoasNele){
+        this.pessoasNele = pessoasNele;
     }
 
     public void entra (int pessoasEntrando){
